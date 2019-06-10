@@ -3,7 +3,7 @@ RUN mkdir /data
 WORKDIR /data
 COPY package.json ./
 RUN npm install
-COPY . /data/
+COPY . .
 
 # ssh
 ENV SSH_PASSWD "root:Docker!"
